@@ -7,9 +7,12 @@ To use openai client or any other model, make changes in the function of call_mo
 
 2. Create a virtual environment and run - pip install -r requirements
 
-3. Then Run - python call_input_guardrails
+3. You will need to download embedding model. The one used here is from - https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2 and it is cached in the folder named Embedding_Model, from which its getting used.
+
+4. Then Run - python call_input_guardrails
 This will start the fastapi app using uvicorn in port 8000. Log file will be generated in the same directory to store the result.
 
 
 ### To do next -
-Create docker for this application
+-- Create docker for this application
+-- Connect with langfuse prompt management
