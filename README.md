@@ -16,3 +16,4 @@ This will start the fastapi app using uvicorn in port 8000. Log file will be gen
 ### To do next -
 -- Create docker for this application
 -- Connect with langfuse prompt management
+-- Right now, only words or single sentence matches are taken into consideration. Expand this to include scoring across multiple sentence and words tagging.
