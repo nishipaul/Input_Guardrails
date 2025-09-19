@@ -1,0 +1,10 @@
+guardrails-ai 
+ollama 
+pandas 
+numpy
+setuptools
+nltk
+sentence-transformers
+fastapi
+"uvicorn[standard]"
+jinja2
