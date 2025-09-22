@@ -1,11 +1,13 @@
-Current state of this input guardrail is as FastAPI application.
+Current state of this input guardrail is as FastAPI application with docker.
 
 ### Steps to run this app -
 
 1. You need to have ollama model of llama3:8b installed in your local, which is getting used here and ollama desktop should be running. By default, ollama python client connects to 11434 port.
-To use openai client or any other model, make changes in the function of call_model_safely which is in file app/input_guardrails_main.py 
+To use openai client or any other model, make changes in the function of call_model_safely which is in file app/input_guardrails_main.py
 
-2. Run the docker file after building it -
+2. Download the embedding model and store it in a separate folder of "Embedding_Model" - https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+
+3. Run the docker file after building it -
      - docker build -t input-guardrails .  (Name I gave is input_guardrails)
      - docker run --rm -p 8000:8000 input-guardrails (8000 is the container port in the dockerfile)
 
